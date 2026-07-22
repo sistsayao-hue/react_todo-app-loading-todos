@@ -11,7 +11,7 @@ import {
   deleteTodo,
 } from './api/todos';
 
-import { Todo } from './api/Todo.ts';
+import { Todo } from './api/Todo';
 
 export const App: React.FC = () => {
   const [todos, setTodos] = useState<Todo[]>([]);
