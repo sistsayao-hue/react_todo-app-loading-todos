@@ -425,10 +425,7 @@ export const App: React.FC = () => {
         {!isLoading && todos.length > 0 && (
           <footer className="todoapp__footer" data-cy="Footer">
             <span className="todo-count" data-cy="TodosCounter">
-       
-
-              {activeTodos.length}{' '}
-{activeTodos.length === 1 ? 'item' : 'items'} 
+              {activeTodos.length} {activeTodos.length === 1 ? 'item' : 'items'}{' '}
               left
             </span>
 
