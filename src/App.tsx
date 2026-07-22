@@ -426,10 +426,13 @@ export const App: React.FC = () => {
           <footer className="todoapp__footer" data-cy="Footer">
             <span className="todo-count" data-cy="TodosCounter">
              {activeTodos.length}{' '}
-  {activeTodos.length === 1
-    ? 'item'
-    : 'items'}{' '}
-  left
+
+
+       {`${activeTodos.length} ${
+               activeTodos.length === 1 ? 'item' : 'items'
+             } left`}
+              
+
             </span>
 
             <nav className="filter" data-cy="Filter">
