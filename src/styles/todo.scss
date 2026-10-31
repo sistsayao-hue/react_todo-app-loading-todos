@@ -29,10 +29,19 @@
     opacity: 0;
   }
 
-  // Título exibido na lista
+  .view {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-width: 0;
+  }
+
   &__title {
     display: block;
+    flex: 1;
     min-width: 0;
+    box-sizing: border-box;
+
     padding: 12px 60px 12px 15px;
 
     white-space: nowrap;
@@ -47,12 +56,12 @@
     text-decoration: line-through;
   }
 
-  // Campo de edição
   &__title-field {
     display: block;
     width: 100%;
     min-width: 0;
     box-sizing: border-box;
+
     padding: 11px 14px;
 
     white-space: nowrap;
@@ -85,7 +94,6 @@
     font-weight: inherit;
     color: #cc9a9a;
 
-    float: right;
     border: 0;
     background: none;
     cursor: pointer;
